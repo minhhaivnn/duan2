@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* chung============================== */
+a {
+  /* bỏ gạch chân */
+  text-decoration: none;
+}
+.content {
+  width: 1170px;
+  min-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* nút Sign Up */
+.btn {
+  display: inline-block;
+  padding: 0px 16px;
+  line-height: 50px;
+  min-width: 118px;
+  color: #ffffff;
+  background: #171100;
+
+  font-size: 1.6rem;
+  border-radius: 24.5px;
+
+  text-align: center;
+}
+/* header============================= */
+/* chọn màu cho nền */
+.header {
+  background-color: #b5c8b5;
+}
+/* làm cho nó khi kéo trang wep xuống phần header sẽ cách ra một khoảng so với đầu trang */
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+/* cho nó quay ngang */
+
+.header .body {
+  display: flex;
+  /* căn giữa */
+  align-items: center;
+  padding: 36px 0px 8px;
+}
+/* căn lại đẩy nó qua phải */
+.nav {
+  margin-left: auto;
+}
+/* cho quay ngang */
+.nav ul {
+  display: flex;
+}
+/* cho các thẻ như hơm courses cách nhau ra  */
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 8px 21px;
+}
+/* làm cho rê chuột vào nó in đậm lên màu khác */
+.nav li.action a,
+.nav a:hover {
+  text-shadow: 1px 0px 0px currentColor;
+
+  color: #171100;
+}
+/* làm dấu gạch chân dưới home */
+.nav li.action a::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  display: block;
+  left: 21px;
+  bottom: 6px;
+  border-radius: 1px;
+}
+.header .bth-Sign-Up {
+  min-width: 144px;
+}
+/* cho phần Sign Up cách ra thêm một khoảng 21+49=70px */
+.header .action {
+  margin-left: 49px;
+}
